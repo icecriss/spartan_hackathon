@@ -9,6 +9,7 @@ export default class Main extends Component {
       <div className="main-screen">
         <div className="app-container">
       <Welcome/>
+        </div>
       </div>
     )
   }
