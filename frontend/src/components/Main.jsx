@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Welcome from './Welcome/Welcome.jsx'
 import './main.scss';
 
 export default class Main extends Component {
@@ -6,7 +7,11 @@ export default class Main extends Component {
     return (
       <div className="main-screen">
         <div className="app-container">
-          Hello World
+
+        
+      <Welcome/>
+
+
       </div>
       </div>
     )
