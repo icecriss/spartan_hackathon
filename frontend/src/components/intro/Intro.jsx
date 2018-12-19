@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+
+
 import './intro.scss';
 import yoda1 from '../pictures/storyYoda1.png';
 
@@ -10,8 +13,8 @@ export default class Intro extends Component {
         <div className="intro-story">
           <p>Voici une ligne de texte qui donne envie de cliquer pour en voir une nouvelle</p>
         </div>
-        <p className="intro-button">DEMARRER</p>
-        <p>Passer l'intro</p>
+        <NavLink to="/login">Démarrer</NavLink>
+        <NavLink to="/login">Passer l'intro</NavLink>
       </div>
     )
   }
