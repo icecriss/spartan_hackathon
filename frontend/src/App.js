@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 
-import Router from './routes'
 import './App.css';
+import Main from './components/Main';
 
 class App extends Component {
   render() {
     return (
-      <Router/>
+      <Main />
     );
   }
 }

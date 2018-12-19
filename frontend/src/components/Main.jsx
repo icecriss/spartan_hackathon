@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './main.scss';
 import Intro from './intro/Intro';
+import PublicRouter from '../routes/PublicRouter';
 
 export default class Main extends Component {
   render() {
     return (
       <div className="main-screen">
         <div className="app-container">
-          <Intro />
+          <PublicRouter />
         </div>
       </div>
     )
