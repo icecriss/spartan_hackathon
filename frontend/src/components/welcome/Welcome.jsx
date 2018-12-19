@@ -10,8 +10,12 @@ export default class Welcome extends Component {
     return (
       <div className="welcome-container">
         <img className="welcome-logo" src={logoWelcomeNoir} alt="perception-logo" />
-        <h1>Decouvre ton monde intérieur</h1>
-        <NavLink to="/intro">Entrer</NavLink>
+          <div className="welcome-entrance">
+             <h1>DECOUVRE TON MONDE INTERIEUR</h1>
+              <NavLink to="/intro" className="welcome-link">
+                <div className="welcome-button">ENTRER</div>
+              </NavLink>
+          </div>
       </div>
     )
   }
