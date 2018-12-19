@@ -1,0 +1,36 @@
+
+.main-screen{
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  .app-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  .main-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images.pexels.com/photos/131686/pexels-photo-131686.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    .app-container {
+      width: 30vw;
+      height: 50vw;
+      min-width: 400px;
+      min-height: 700px;
+      border: 12px solid black;
+      border-radius: 15px;
+      background-color: wheat;
+
+
+
+
+    }
+  }
+}
