@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Welcome from './Welcome/Welcome.jsx'
+import Welcome from './welcome/Welcome.jsx'
 import './main.scss';
 import Intro from './intro/Intro';
 
