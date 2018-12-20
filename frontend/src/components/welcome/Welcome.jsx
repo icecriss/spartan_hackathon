@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-
-
 import './welcome.scss'
 import logoWelcomeNoir from '../pictures/welcomeLogoNoir.png'
 

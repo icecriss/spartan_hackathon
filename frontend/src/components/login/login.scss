@@ -1,0 +1,53 @@
+.login-container {
+  background-image: url(../pictures/welcomeFond.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  
+  
+  .login-logo{
+    width:350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:300px;
+  }
+
+  .login-field-container{
+    width:350px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    
+
+    .username-field{
+      background-color: rgba(223, 210, 210, 0.5);
+      height: 40px;
+      border:none;      
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif; 
+      //padding-left: 30px;
+      margin-bottom:20px;
+      width:100%;
+      color:black;
+    }
+  
+    .password-field{
+      background-color:  rgba(223, 210, 210, 0.5);
+      height: 40px;
+      border:none;      
+      border-radius: 10px;
+      font-family: 'Montserrat', sans-serif; 
+      //padding-left: 30px;
+      margin-bottom:20px;
+      width:100%;
+    }
+
+  }
+  
+
+  
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
