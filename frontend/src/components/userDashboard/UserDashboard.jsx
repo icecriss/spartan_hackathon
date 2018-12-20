@@ -22,12 +22,13 @@ export class UserDashboard extends Component {
       currentImage: 2,
       currentLevel: 1,
       currentChallengesAccomplished: 0,
-      currentChallengesStarted: 2,
+      currentChallengesStarted: 1,
     }
   }
 
 
   render() {
+    console.log(this.props)
     return (
       < div className="dash-container" >
         <img className="dash-character" src={this.state[`image${this.state.currentLevel}`]} />

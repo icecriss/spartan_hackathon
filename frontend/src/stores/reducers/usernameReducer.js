@@ -1,6 +1,7 @@
 const defaultStates = {
   username: "",
-  password: ""
+  password: "",
+  challengesList: []
 }
 
 export default (state = defaultStates, action) => {
@@ -8,7 +9,7 @@ export default (state = defaultStates, action) => {
     case 'USER_NAME':
       return {
         ...state,
-        ...action.payload.userData 
+        ...action.payload.userData
       }
     default:
       return state
