@@ -18,6 +18,7 @@ export class Login extends Component {
   signUser(e) {
     e.preventDefault()
     this.props.usernameAction(this.state)
+    this.props.history.push('/dashboard')
   }
 
   render() {
@@ -48,7 +49,7 @@ export class Login extends Component {
           </input>
         </div>
 
-        <NavLink className="login-button" to="/dashboard">Entrer</NavLink>
+        <a onClick={(e) => this.signUser(e)} className="login-button">Entrer</a>
 
       </div>
 
