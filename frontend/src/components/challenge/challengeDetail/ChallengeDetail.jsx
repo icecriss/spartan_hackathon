@@ -17,7 +17,7 @@ export default class ChallengeDetail extends Component {
   render() {
     return (
       <div className="challengeDetail-container">
-        <div style={{ backgroundImage: `url(${require("../pictures/1-1.png")})` }} className="challentDetail-stat"></div>
+        <div style={{ backgroundImage: `url(${require("../../pictures/1-1.png")})` }} className="challentDetail-stat"></div>
 
         <div className="descritption">
           <p>{this.state.description}</p>
