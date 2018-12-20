@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "titre": "Boire 2L d’eau par jour",
+    "description": "L’eau représente entre 50 et 75% de nos corps. Pense ton corps, hydrate-toi ! C’est une des habitudes les plus simples et les plus saines adopter.",
+    "couleur": "#3498DB",
+    "objectif": 2,
+    "unité": "Litre"
+  },
+  {
+    "id": 2,
+    "titre": "Marcher 30 min par jour",
+    "description": "Plus tu marches, plus tu brûles de calories.",
+    "couleur": "#E74C3C",
+    "objectif": 30,
+    "unité": "min"
+  },
+  {
+    "id": 3,
+    "titre": "Manger 5 fruits/ légumes par jour",
+    "description": "Les fruits et légumes apportent vitamines, minéraux, fibre, etc. et sont indispensable pour une bonne santé. Les médecins en recommandent souvent au moins 5 par jour.",
+    "couleur": "#E67E22",
+    "objectif": 5,
+    "unité": "Fruits et/où légumes"
+  },
+  {
+    "id": 4,
+    "titre": "Méditer 15 min par jour",
+    "description": "La méditation est excellente pour ta santé physique et mentale. Fixe-toi un objectif en nombre minutes ou d’heure.",
+    "couleur": "#2ECC71",
+    "objectif": 15,
+    "unité": "Minutes"
+  },
+  {
+    "id": 5,
+    "titre": "Lire 15 min par jour",
+    "description": "Lire régulièrement est une excellente habitude qui te donne accès à une quantité immense de connaissances et d’expériences. Pour un objectif de nombre de livres lus, utilise l’objectif « Lire des livres",
+    "couleur": "#9B59B6",
+    "objectif": 15,
+    "unité": "Minutes"
+  },
+  {
+    "id": 6,
+    "titre": "Exprimer ma gratitude ",
+    "description": "Exprimer ta gratitude est un excellent exercice que tu peux faire chaque jour. Cela rend plus optimiste et réduit la négativité.",
+    "couleur": "#9B59B6",
+    "objectif": "15",
+    "unité": "Minutes"
+  },
+  {
+    "id": 7,
+    "titre": "Dire mes affirmations 2 par jour",
+    "description": "Les affirmations positives sont des phrases que l’on dit, souvent de bon matin, pour recadrer notre esprit d’une manière positive et constructive.",
+    "couleur": "#E74C3C",
+    "objectif": 2,
+    "unité": "Nombre"
+  },
+  {
+    "id": 8,
+    "titre": "Travailler pour soi",
+    "description": "Travailler pour soi, permet de faire évoluer ses projets et ses besoins.",
+    "couleur": "#E67E22",
+    "objectif": 1,
+    "unité": "Heure"
+  },
+  {
+    "id": 9,
+    "titre": "Passer du temps dans la nature",
+    "description": "Si tu vis en ville, sors-en régulièrement pour respirer l’air pur, admirer la beauté de la nature et réduire ton stress.",
+    "couleur": "#2ECC71",
+    "objectif": "15",
+    "unité": "Minutes"
+  },
+  {
+    "id": 10,
+    "titre": " Se limiter le temps passer sur les réseaux",
+    "description": "Réduire sont temps passer sur les réseaux sociaux, peut libéré du temps pour passer du temps en famille ou tout autres activité.",
+    "couleur": "#9B59B6",
+    "objectif": 2,
+    "unité": "Heure (max)"
+  }
+]
