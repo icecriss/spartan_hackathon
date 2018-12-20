@@ -1,0 +1,16 @@
+[
+  {
+    "id": 0,
+    "name": "défi 1",
+    "description": "descriptif du défi 1",
+    "color": "colorTheme1",
+    "icone": "fas fa-user-alt"
+  },
+  {
+    "id": 1,
+    "name": "défi 2",
+    "description": "descriptif du défi 2",
+    "color": "colorTheme2",
+    "icone": "fab fa-accessible-icon"
+  }
+]
