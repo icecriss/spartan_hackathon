@@ -41,7 +41,7 @@ export default class Login extends Component {
 
         </div>
 
-        <NavLink className="login-button" to="/">Entrer</NavLink>
+        <NavLink className="login-button" to="/dashboard">Entrer</NavLink>
 
       </div>
 
