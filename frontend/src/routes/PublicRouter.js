@@ -6,7 +6,7 @@ import Welcome from '../components/welcome/Welcome';
 import Intro from '../components/intro/Intro';
 import Login from '../components/login/Login';
 import UserDashboard from '../components/userDashboard/UserDashboard';
-import challengeChoice from '../components/challengeChoice/challengeChoice';
+import ChallengeChoice from '../components/challenge/ChallengeChoice';
 
 class AppRouter extends Component {
   render() {
@@ -16,7 +16,8 @@ class AppRouter extends Component {
         <Route exact path="/intro" component={Intro} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/dashboard" component={UserDashboard} />
-        <Route exact path="/challenges" component={challengeChoice} />
+        <Route exact path="/challenges" component={ChallengeChoice} />
+        
       </Switch>
     )
   }

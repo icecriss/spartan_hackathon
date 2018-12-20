@@ -25,29 +25,28 @@ export class Login extends Component {
     return (
       <div className="login-container">
         <img className="login-logo" src={logoWelcomeNoir} alt="perception-logo" />
+          <div className="login-field-container">
 
-        <div className="login-field-container">
+            <input
+              type="text"
+              value={this.state.username}
+              name="text"
+              className="username-field"
+              id="username-field"
+              placeholder="Nom d'utilisateur"
+              onChange={(e) => this.setState({ username: e.target.value })}>
+            </input>
 
-          <input
-            type="text"
-            value={this.state.username}
-            name="text"
-            className="username-field"
-            id="username-field"
-            placeholder="Nom d'utilisateur"
-            onChange={(e) => this.setState({ username: e.target.value })}>
-          </input>
-
-          <input
-            type="password"
-            value={this.state.password}
-            name="password"
-            className="password-field"
-            id="password-field"
-            placeholder="Mot de passe"
-            onChange={(e) => this.setState({ password: e.target.value })}>
-          </input>
-        </div>
+            <input
+              type="password"
+              value={this.state.password}
+              name="password"
+              className="password-field"
+              id="password-field"
+              placeholder="Mot de passe"
+              onChange={(e) => this.setState({ password: e.target.value })}>
+            </input>
+          </div>
 
         <a onClick={(e) => this.signUser(e)} className="login-button">Entrer</a>
 

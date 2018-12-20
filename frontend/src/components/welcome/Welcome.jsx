@@ -5,6 +5,7 @@ import logoWelcomeNoir from '../pictures/welcomeLogoNoir.png'
 
 export default class Welcome extends Component {
   render() {
+    console.log("test props", this.props.test)
     return (
       <div className="welcome-container">
         <img className="welcome-logo" src={logoWelcomeNoir} alt="perception-logo" />

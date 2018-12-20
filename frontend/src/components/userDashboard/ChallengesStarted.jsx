@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { usernameAction } from '../../stores/actions/username'
-
-
 import './challengesStarted.scss';
+
 
 export class Challenge extends Component {
   render() {
-    console.log(this.props)
+    console.log("ici", this.props)
     return (
       <div className="challenge-container">
+       {
+        this.props.challenges.startedChallenges.map((challenge) => {
+          return <li> {challenge.titre}</li>
+         })
+       }
        
       </div>
     )
@@ -21,7 +24,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = {
-  usernameAction
+  
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Challenge)

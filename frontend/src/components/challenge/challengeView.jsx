@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import {addToStartedChallenge, incrementScore} from '../../stores/actions/challengeActions'
-import './challengeChoice.scss'
+import './challengeView.scss'
 
-export class challengeChoice extends Component {
+export class challengeView extends Component {
   render() {
     console.log('FROM CHALLENGES', this.props)
     return (
-      <div className="challengeChoice-container">
-        <div className="">
+      <div className="challengeView-container">
+        <div>
           {
             this.props.challenges.allChallenges.map((challenge) => {
               return(
@@ -43,4 +43,4 @@ const mapDispatchToProps = {
   incrementScore
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(challengeChoice)
+export default connect(mapStateToProps, mapDispatchToProps)(challengeView)
