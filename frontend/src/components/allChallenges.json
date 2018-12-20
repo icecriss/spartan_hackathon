@@ -5,7 +5,9 @@
     "description": "L’eau représente entre 50 et 75% de nos corps. Pense ton corps, hydrate-toi ! C’est une des habitudes les plus simples et les plus saines adopter.",
     "couleur": "#3498DB",
     "objectif": 2,
-    "unité": "Litre"
+    "unité": "Litre",
+    "score": 0,
+    "incrementValue": 0.2
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "description": "Plus tu marches, plus tu brûles de calories.",
     "couleur": "#E74C3C",
     "objectif": 30,
-    "unité": "min"
+    "unité": "min",
+    "score": 0,
+    "incrementValue": 10
   },
   {
     "id": 3,
@@ -21,7 +25,9 @@
     "description": "Les fruits et légumes apportent vitamines, minéraux, fibre, etc. et sont indispensable pour une bonne santé. Les médecins en recommandent souvent au moins 5 par jour.",
     "couleur": "#E67E22",
     "objectif": 5,
-    "unité": "Fruits et/où légumes"
+    "unité": "Fruits et/où légumes",
+    "score": 0,
+    "incrementValue": 1
   },
   {
     "id": 4,
@@ -29,7 +35,9 @@
     "description": "La méditation est excellente pour ta santé physique et mentale. Fixe-toi un objectif en nombre minutes ou d’heure.",
     "couleur": "#2ECC71",
     "objectif": 15,
-    "unité": "Minutes"
+    "unité": "Minutes",
+    "score": 0,
+    "incrementValue": 5
   },
   {
     "id": 5,
@@ -37,7 +45,9 @@
     "description": "Lire régulièrement est une excellente habitude qui te donne accès à une quantité immense de connaissances et d’expériences. Pour un objectif de nombre de livres lus, utilise l’objectif « Lire des livres",
     "couleur": "#9B59B6",
     "objectif": 15,
-    "unité": "Minutes"
+    "unité": "Minutes",
+    "score": 0,
+    "incrementValue": 5
   },
   {
     "id": 6,
@@ -45,7 +55,9 @@
     "description": "Exprimer ta gratitude est un excellent exercice que tu peux faire chaque jour. Cela rend plus optimiste et réduit la négativité.",
     "couleur": "#9B59B6",
     "objectif": "15",
-    "unité": "Minutes"
+    "unité": "Minutes",
+    "score": 0,
+    "incrementValue": 1
   },
   {
     "id": 7,
@@ -53,7 +65,9 @@
     "description": "Les affirmations positives sont des phrases que l’on dit, souvent de bon matin, pour recadrer notre esprit d’une manière positive et constructive.",
     "couleur": "#E74C3C",
     "objectif": 2,
-    "unité": "Nombre"
+    "unité": "Nombre",
+    "score": 0,
+    "incrementValue": 1
   },
   {
     "id": 8,
@@ -61,7 +75,9 @@
     "description": "Travailler pour soi, permet de faire évoluer ses projets et ses besoins.",
     "couleur": "#E67E22",
     "objectif": 1,
-    "unité": "Heure"
+    "unité": "Heure",
+    "score": 0,
+    "incrementValue": 0.2
   },
   {
     "id": 9,
@@ -69,7 +85,9 @@
     "description": "Si tu vis en ville, sors-en régulièrement pour respirer l’air pur, admirer la beauté de la nature et réduire ton stress.",
     "couleur": "#2ECC71",
     "objectif": "15",
-    "unité": "Minutes"
+    "unité": "Minutes",
+    "score": 0,
+    "incrementValue": 5
   },
   {
     "id": 10,
@@ -77,6 +95,8 @@
     "description": "Réduire sont temps passer sur les réseaux sociaux, peut libéré du temps pour passer du temps en famille ou tout autres activité.",
     "couleur": "#9B59B6",
     "objectif": 2,
-    "unité": "Heure (max)"
+    "unité": "Heure (max)",
+    "score": 0,
+    "incrementValue": 0.5
   }
 ]

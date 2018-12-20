@@ -1,7 +1,6 @@
 const defaultStates = {
   username: "",
   password: "",
-  challengesList: []
 }
 
 export default (state = defaultStates, action) => {
