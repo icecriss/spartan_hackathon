@@ -26,25 +26,33 @@
     justify-self: center;
     text-align: center;
     font-size: 1.5em;
+    color:white;
 
+    
+    ::placeholder {
+      color:white;
+      font-size: 1em;
+    }
     .username-field{
-      background-color: rgba(0, 0, 0, 0.363);
+      background-color: rgba(224, 224, 224, 0.363);
       width: 60%;
       padding: 10px 5%;
       margin: 5px 0;
       border: 1px solid grey;
       border-radius: 5px;
-      color: black;
+     
+      
     }
   
     .password-field{
-      background-color: rgba(0, 0, 0, 0.363);
+      background-color: rgba(224, 224, 224, 0.363);
       width: 60%;
       padding: 10px 5%;
       margin: 5px 0;
       border: 1px solid grey;
       border-radius: 5px;
-      color: black;
+     
+      
     }
 
 
