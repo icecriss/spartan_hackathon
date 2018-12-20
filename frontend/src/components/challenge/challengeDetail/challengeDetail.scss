@@ -1,0 +1,22 @@
+.challengeDetail-container{
+  background-color: white;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30% 50% 15% 15%;
+  div {
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .challentDetail-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      padding: 10px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

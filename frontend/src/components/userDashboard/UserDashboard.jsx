@@ -9,7 +9,7 @@ import mario1 from '../pictures/mario1.png';
 import mario2 from '../pictures/mario2.png';
 import mario3 from '../pictures/mario3.png';
 import ChallengesStarted from './ChallengesStarted';
-import Challenge2 from './Challenge2';
+import ChallengeEmpty from './ChallengeEmpty';
 
 export class UserDashboard extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ export class UserDashboard extends Component {
       currentImage: 2,
       currentLevel: 1,
       currentChallengesAccomplished: 0,
-      currentChallengesStarted: 1,
+      currentChallengesStarted: 0,
     }
   }
 
@@ -50,7 +50,7 @@ export class UserDashboard extends Component {
         <div className="dash-challengesContainer">
           <h3>Challenges en cours</h3>
 
-          {this.state.currentChallengesStarted === 0 && <Challenge2 />}
+          {this.state.currentChallengesStarted === 0 && <ChallengeEmpty />}
           {this.state.currentChallengesStarted !== 0 && <ChallengesStarted />}
         </div>
       </div >

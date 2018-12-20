@@ -1,0 +1,23 @@
+.challenge-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 182, 182);
+  img {
+    margin-top: 10px;
+    width: 100px;  
+  }
+  .challenge-EmptyText {
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 2em;
+      color: rgb(27, 26, 26);
+      padding: 10px;
+    }
+  }
+
+}
