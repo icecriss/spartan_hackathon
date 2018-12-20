@@ -1,6 +1,6 @@
 
 .main-screen{
-  
+  font-family: 'Raleway', sans-serif;
   // height: 100vh;
   padding: 0;
   margin: 0;
@@ -8,11 +8,10 @@
   .app-container {
     width: 100vw;
     height: 100vh;
-   
   }
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   .main-screen{
     display: flex;
     justify-content: center;
