@@ -1,49 +1,3 @@
-// .welcome-container {
-//   background-image: url(../pictures/welcomeFond.png);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   height: 100%;
-//   display: flex;
-//   flex-direction: column;
-//   align-content: center;
-  
-//   .welcome-logo {
-//     width:300px;
-//     margin-right: auto;
-//     margin-left: auto;
-
-//   }
-
-//   .welcome-entrance {
-//     width:280px;
-//     margin-right: auto;
-//     margin-left: auto;
-//     margin-top: 220px;
-//     text-align:center;
-//     font-family: 'Montserrat', sans-serif;    
-//     color:white;
-    
-
-
-//     .welcome-link {
-//       text-decoration: none;
-//       font-size: bold;
-
-//       .welcome-button {
-//         border:none;
-//         padding:6px 0 6px 0;
-//         border-radius:8px;
-//         color:white;
-//         margin-top:20px;
-//         outline:2px dotted;
-//         outline:5px auto -webkit-focus-ring-color;
-//       }
-//     }
-//   }
-// }
-
-// @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
 .welcome-container {
   background-image: url(../pictures/welcomeFond.png);
   background-repeat: no-repeat;
@@ -86,16 +40,6 @@
       &:hover {
         cursor: pointer;
       }
-
-      // .welcome-button {
-      //   border:none;
-      //   padding:6px 0 6px 0;
-      //   border-radius:8px;
-      //   color:white;
-      //   margin-top:20px;
-      //   outline:2px dotted;
-      //   outline:5px auto -webkit-focus-ring-color;
-      // }
     }
   }
 

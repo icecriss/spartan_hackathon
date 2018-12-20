@@ -15,7 +15,7 @@ export class Login extends Component {
     }
   }
 
-  signUser(e){
+  signUser(e) {
     e.preventDefault()
     this.props.usernameAction(this.state)
   }
@@ -24,9 +24,9 @@ export class Login extends Component {
     return (
       <div className="login-container">
         <img className="login-logo" src={logoWelcomeNoir} alt="perception-logo" />
-          
-          <div className="login-field-container">
-          
+
+        <div className="login-field-container">
+
           <input
             type="text"
             value={this.state.username}
@@ -48,7 +48,7 @@ export class Login extends Component {
           </input>
         </div>
 
-        <NavLink onClick={(e) => this.signUser(e)} className="login-button" to="/">Entrer</NavLink>
+        <NavLink className="login-button" to="/dashboard">Entrer</NavLink>
 
       </div>
 
