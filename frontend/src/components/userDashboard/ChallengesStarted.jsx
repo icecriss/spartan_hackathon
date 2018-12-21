@@ -9,24 +9,27 @@ export class Challenge extends Component {
     console.log("ici", this.props)
     return (
       <div className="challenge-container">
-        <div>
+        <div className="chal-start">
+          <div className="chal-btn">
 
-          <NavLink to='/challenges'><i className="fas fa-plus-circle"></i></NavLink>
+            <NavLink to='/challenges'><i className="fas fa-plus-circle"></i></NavLink>
+          </div>
+          <ul>
+            {
+
+              this.props.challenges.startedChallenges.map((challenge) => {
+                return <NavLink to={`./challenge/${challenge.id}`}><li style={{ backgroundColor: `${challenge.couleur}` }}>
+                  <div className="chal-start-indiv">
+                    <h3>{challenge.titre}</h3>
+
+                  </div>
+                </li>
+                </NavLink>
+
+              })
+            }
+          </ul>
         </div>
-        <ul>
-          {
-
-            this.props.challenges.startedChallenges.map((challenge) => {
-              return <NavLink to={`./challenge/${challenge.id}`}><li>
-                <div>
-                  <h3>{challenge.titre}</h3>
-                </div>
-              </li>
-              </NavLink>
-
-            })
-          }
-        </ul>
       </div>
     )
   }

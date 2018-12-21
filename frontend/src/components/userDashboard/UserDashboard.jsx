@@ -54,15 +54,15 @@ export class UserDashboard extends Component {
         <h2 className="dash-username">{this.props.user.username}</h2>
         <ul className="dash-userScore">
           <li>
-            <p>{this.props.challenges.terminatedChallenges.length}</p>
+            <p className="dash-number">{this.props.challenges.terminatedChallenges.length}</p>
             <p>Défis terminés</p>
           </li>
           <li className="dash-userScoreCenter">
-            <p>{currentLevel}</p>
+            <p className="dash-number">{currentLevel}</p>
             <p>Level</p>
           </li>
           <li>
-            <p>{this.props.challenges.startedChallenges.length}</p>
+            <p className="dash-number">{this.props.challenges.startedChallenges.length}</p>
             <p>Défis en cours</p>
           </li>
         </ul>

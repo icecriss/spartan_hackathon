@@ -3,7 +3,7 @@
   align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 5% 35% 10% 10% 35% 5%;
+  grid-template-rows: 5% 40% 10% 10% 35% ;
   background-color: white;
   .dash-headerBtn{
     display: flex;
@@ -43,6 +43,7 @@
   }
   .dash-userScore {
     justify-self: center;
+    height: 100%;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
@@ -53,8 +54,17 @@
     width: 100%;
     justify-content: center;
     li {
-      width: 30%;
+      width: 28%;
       text-align: center;
+      padding: 5px 5px;
+
+      p {
+        margin: 0;
+      }
+      .dash-number {
+        font-weight: bold;
+        padding-bottom: 2px;
+      }
     
     }
     .dash-userScoreCenter{
@@ -63,12 +73,12 @@
     }
   }
   .dash-challengesContainer {
-    justify-self: flex-start;
+    align-self: self-end;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 5;
-    grid-row-end: 6;
-    height: 100%;
+    grid-row-end: 7;
+    //height: 100%;
     width: 100%;
     h3 {
       padding-left: 15px;

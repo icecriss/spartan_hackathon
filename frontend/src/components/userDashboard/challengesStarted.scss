@@ -1,22 +1,40 @@
 .challenge-container {
-  width: 100%;
-  div {
-    ul {
-
-      display: flex;
-      padding: 0;
-      justify-content: center;
+  .chal-start {
+    .chal-btn {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-top: -10px; 
     }
+
+    width: 100%;
+
+      ul {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        li {
+          padding: 20px 0;
+          h3 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+          }
+          border-radius: 5px;
+          margin-bottom: 2px;
+
+        }
+      }
+  
+  a {
+    // text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    text-decoration: none;
   }
 
-
-a {
-  // text-decoration: none;
-  list-style: none;
-  color: rgb(0, 0, 0);
-  font-size: 0.9em;
-}
-ul {
-  padding: 0;
-}
+  }
 }

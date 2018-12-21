@@ -40,7 +40,7 @@ export class ChallengeDetail extends Component {
     console.log("SCORE", this.state.score)
     if (this.state.score == this.state.objectif) {
       setTimeout(() => {
-        alert('BRAVO')
+        alert('Félicitations, vous avez accompli votre défi !')
         this.props.history.push('/dashboard')
       }, 250)
     }
