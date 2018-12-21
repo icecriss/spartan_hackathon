@@ -25,7 +25,7 @@ export class ChallengeDetail extends Component {
 
   componentDidMount() {
     const id = this.props.match.params.id;
-    const currentChallenge = this.props.challenges.allChallenges.find((challenge) => {
+    const currentChallenge = this.props.challenges.startedChallenges.find((challenge) => {
       return (
         challenge.id === parseInt(id)
       )
@@ -54,20 +54,26 @@ export class ChallengeDetail extends Component {
         </div>
         <div className="challengeDetail-buttons">
 
-          <i onClick={() => this.props.incrementScore(this.state, parseFloat(this.state.incrementValue), '+')} className="fas fa-minus-circle"></i>
+          <i onClick={() => {
+            this.props.incrementScore(this.state, parseFloat(this.state.incrementValue), '-')
+            this.setState({ score: this.state.score -= parseFloat(this.state.incrementValue) })
+          }} className="fas fa-minus-circle"></i>
           <div>
             <p className="challengeDetail-incrementValue">{this.state.incrementValue}</p>
             <p>{this.state.unité}</p>
 
           </div>
 
-          <i onClick={() => this.props.incrementScore(this.state, parseFloat(this.state.incrementValue), '+')} className="fas fa-plus-circle"></i>
+          <i onClick={() => {
+            this.props.incrementScore(this.state, parseFloat(this.state.incrementValue), '+')
+            this.setState({ score: this.state.score += parseFloat(this.state.incrementValue) })
+          }} className="fas fa-plus-circle"></i>
 
 
 
         </div>
 
-      </div>
+      </div >
     )
   }
 }

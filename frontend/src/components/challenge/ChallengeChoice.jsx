@@ -138,7 +138,10 @@ export class ChallengeChoice extends Component {
             if (index < 5) {
               return (
                 <li className="challenge-preview" style={{ backgroundColor: `${challenge.couleur}` }}>
-                  <div>
+                  <div className="challenge-icon">
+                    <i className="fas fa-tint"></i>
+                  </div>
+                  <div className="challenge-text">
                     <h3>{challenge.titre}</h3>
                     <label htmlFor="checkbox">Choisir ce Challenge</label>
                     <input
@@ -149,7 +152,9 @@ export class ChallengeChoice extends Component {
                     // onChange={(e) => this.addToSelected(e)}
 
                     />
+
                   </div>
+
                 </li>
               )
             }
@@ -157,6 +162,7 @@ export class ChallengeChoice extends Component {
         </ul>
 
         <div className='btn-container'>
+          <button className='btn' onClick={this.shuffle}>Shuffle items</button>
           <button className='btn' onClick={this.shuffle}>Shuffle items</button>
         </div>
 
