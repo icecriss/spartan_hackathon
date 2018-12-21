@@ -1,36 +1,36 @@
 .challengeChoice-container{
-   height: 100%;
-  // display: grid;
-  // grid-template-columns: 1fr;
-  // grid-template-rows: 20% 60% 10% 10%;
-  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  background-color: rgb(241, 224, 224);
+
+  .chalenge-preview-list {
+    padding: 0;
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 100%;
 
 
-.challenge-preview{
-    display: flex;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 5px;
-    //width: 300px;
-    //grid-column-start: 1;
-    //grid-column-end: 2;
-    //grid-row-start: 2;
-    //grid-row-end: 3;
-  
-    
-     
-      li {
-        list-style: none;
+    .challenge-preview{
+      height: 15%;
+      // margin: 1% 0;
 
-        .checkbox{
-          opacity: 0;
-        }
-      }
+    }
     
-    
-    
-  
   }
+  .btn-container{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 
 }
 

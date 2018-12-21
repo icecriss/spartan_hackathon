@@ -9,20 +9,20 @@ export class Challenge extends Component {
     console.log("ici", this.props)
     return (
       <div className="challenge-container">
-      <ul>
-       { 
-         
-        this.props.challenges.startedChallenges.map((challenge) => {
-          return <NavLink to={`./challenge/${challenge.id}`}><li>
-          <div>
-            <h3>{challenge.titre}</h3>             
-          </div>
-        </li>
-        </NavLink>
-         })
-       }
-       </ul>
-      </div>  
+        <ul>
+          {
+
+            this.props.challenges.startedChallenges.map((challenge) => {
+              return <NavLink to={`./challenge/${challenge.id}`}><li>
+                <div>
+                  <h3>{challenge.titre}</h3>
+                </div>
+              </li>
+              </NavLink>
+            })
+          }
+        </ul>
+      </div>
     )
   }
 }
@@ -32,7 +32,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = {
-  
+
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Challenge)
