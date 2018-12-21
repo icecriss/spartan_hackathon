@@ -26,7 +26,7 @@ export class Login extends Component {
       <div className="login-container">
         <img className="login-logo" src={logoWelcomeNoir} alt="perception-logo" />
           <div className="login-field-container">
-
+            <p className="welcome-texte">Sign in to get started</p>
             <input
               type="text"
               value={this.state.username}
@@ -34,7 +34,9 @@ export class Login extends Component {
               className="username-field"
               id="username-field"
               placeholder="Nom d'utilisateur"
-              onChange={(e) => this.setState({ username: e.target.value })}>
+              onChange={(e) => this.setState({ username: e.target.value })}
+              required
+              >
             </input>
 
             <input
@@ -47,10 +49,9 @@ export class Login extends Component {
               onChange={(e) => this.setState({ password: e.target.value })}>
             </input>
           </div>
-
         <a onClick={(e) => this.signUser(e)} className="login-button">Entrer</a>
-
       </div>
+      
 
     )
   }

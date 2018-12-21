@@ -10,7 +10,8 @@
   
   .login-logo {
     justify-self: center;
-    width: 300px;
+    width: 200px;
+    margin-top:5vh;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -27,6 +28,11 @@
     text-align: center;
     font-size: 1.5em;
     color:white;
+
+    p {
+      margin:0px;
+      font-size:0.4em;
+    }
 
     input::placeholder {
       color:black;
@@ -62,13 +68,18 @@
     align-self: center;
     justify-self: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
-    background-color: rgb(60,90,153);
+    font-family: 'Raleway', sans-serif;
+    background-color:#3B5998;
     width: 70%;
     padding: 5px 0;
     border-radius: 5px;
     color: white;
+  }
+
+  .welcome-signin{
+    color:white;
   }
 }
 
