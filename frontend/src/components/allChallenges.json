@@ -2,7 +2,7 @@
   {
     "id": 1,
     "titre": "Boire 2L d’eau par jour",
-    "description": "L’eau représente entre 50 et 75% de nos corps. Pense ton corps, hydrate-toi ! C’est une des habitudes les plus simples et les plus saines adopter.",
+    "description": "L’eau représente entre 50 et 75% de nos corps. Pense à ton corps, hydrate-toi ! C’est une des habitudes les plus simples et les plus saines à adopter.",
     "couleur": "#3498DB",
     "objectif": 2,
     "unité": "Litre",
@@ -21,8 +21,8 @@
   },
   {
     "id": 3,
-    "titre": "Manger 5 fruits/ légumes par jour",
-    "description": "Les fruits et légumes apportent vitamines, minéraux, fibre, etc. et sont indispensable pour une bonne santé. Les médecins en recommandent souvent au moins 5 par jour.",
+    "titre": "Manger 5 fruits / légumes par jour",
+    "description": "Les fruits et légumes apportent vitamines, minéraux, fibres, etc. Et sont indispensables pour une bonne santé. Les médecins en recommandent souvent au moins 5 par jour.",
     "couleur": "#E67E22",
     "objectif": 5,
     "unité": "Fruits et/où légumes",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "titre": "Méditer 15 min par jour",
-    "description": "La méditation est excellente pour ta santé physique et mentale. Fixe-toi un objectif en nombre minutes ou d’heure.",
+    "description": "La méditation est excellente pour ta santé physique et mentale. Fixe-toi un objectif en minutes ou heures.",
     "couleur": "#2ECC71",
     "objectif": 15,
     "unité": "Minutes",
@@ -91,8 +91,8 @@
   },
   {
     "id": 10,
-    "titre": " Se limiter le temps passer sur les réseaux",
-    "description": "Réduire sont temps passer sur les réseaux sociaux, peut libéré du temps pour passer du temps en famille ou tout autres activité.",
+    "titre": " Se limiter le temps passé sur les réseaux",
+    "description": "Réduire sont temps passer sur les réseaux sociaux, peut libérer du temps pour passer du temps en famille ou tout autre activité.",
     "couleur": "#9B59B6",
     "objectif": 2,
     "unité": "Heure (max)",

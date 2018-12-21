@@ -5,16 +5,16 @@ import { NavLink } from 'react-router-dom'
 
 export class ChallengeChoice extends Component {
 
-/// reprendre la fabrication de la route qui lance le defiDSOlo injectée des données en fonctions de son id
+  /// reprendre la fabrication de la route qui lance le defiDSOlo injectée des données en fonctions de son id
   render() {
     return (
       <div>
-      {
-        this.props.challenges.allChallenges.map((challenge) => {
-          return <NavLink test="blabla" to="/challenge/:id"><li>{challenge.titre}</li></NavLink> 
-         })
-       }
-        
+        {
+          this.props.challenges.allChallenges.map((challenge) => {
+            return <NavLink to={`challenge/${challenge.id}`}><li>{challenge.titre}</li></NavLink>
+          })
+        }
+
       </div>
     )
   }

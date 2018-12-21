@@ -10,6 +10,6 @@ export const addToTerminatedChallenge = (challenge) => ({
 
 export const incrementScore = (challenge, scoreValue, operator) => ({
   type: 'INCREMENT_SCORE',
-  payload: {scoreValue, challenge, operator}
+  payload: { scoreValue, challenge, operator }
 })
 
