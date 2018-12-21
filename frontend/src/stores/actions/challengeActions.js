@@ -13,3 +13,8 @@ export const incrementScore = (challenge, scoreValue, operator) => ({
   payload: { scoreValue, challenge, operator }
 })
 
+export const resetScore = () => ({
+  type: 'RESET_SCORE',
+  payload: null
+})
+

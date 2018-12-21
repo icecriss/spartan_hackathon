@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
 import { usernameAction } from '../../stores/actions/username'
+import { resetScore } from '../../stores/actions/challengeActions'
 
 import './userDashboard.scss';
 
@@ -14,16 +15,25 @@ import ChallengeEmpty from './ChallengeEmpty';
 export class UserDashboard extends Component {
   constructor(props) {
     super(props);
+
+    const level = Math.floor((props.challenges.terminatedChallenges.length / 2))
+    const currentLevel = level > 0 ? level : 1
+
     this.state = {
       userName: '',
       image1: mario1,
       image2: mario2,
       image3: mario3,
       currentImage: 2,
-      currentLevel: 1,
-      currentChallengesAccomplished: 0,
-      currentChallengesStarted: 0,
+      currentLevel,
+      currentChallengesAccomplished: props.challenges.terminatedChallenges.length,
+      currentChallengesStarted: props.challenges.startedChallenges.length,
     }
+  }
+
+  resetProfile(){
+    const response = window.confirm('Etes vous sur de vouloir remettre à zéro ?')
+    response == true ? this.props.resetScore() : console.log("Profile not reset !")
   }
 
 
@@ -31,6 +41,9 @@ export class UserDashboard extends Component {
     console.log(this.props)
     return (
       <div className="dash-container">
+        <div style={{position: 'absolute', cursor: 'pointer'}}
+          onClick={() => this.resetProfile()}
+        ><i class="fas fa-power-off"></i></div>
         <img className="dash-character" src={this.state[`image${this.state.currentLevel}`]} />
         <h2 className="dash-username">{this.props.user.username}</h2>
         <ul className="dash-userScore">
@@ -63,7 +76,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = {
-  usernameAction
+  usernameAction,
+  resetScore
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(UserDashboard)

@@ -45,6 +45,9 @@ export default (state = initialState, { type, payload }) => {
       }
       return { ...state, startedChallenges: currentChallengess, terminatedChallenges: currentTerminated }
 
+    case 'RESET_SCORE':
+      return {...initialState}
+
     default:
       return state
   }
