@@ -6,8 +6,9 @@
   height: 100%;
 
   .chalenge-preview-list {
+
     padding: 0;
-    margin: 0;
+    margin: 0 10px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -38,22 +39,102 @@
     }
     
   }
+  // .btn-container{
+  //   grid-column-start: 1;
+  //   grid-column-end: 2;
+  //   grid-row-start: 3;
+  //   grid-row-end: 4;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 100%;
+  //   .btn {
+  //     width: 140px;
+  //     height: 30px;
+  //     border-radius: 5px;
+  //     background-color: white;
+  //     margin: 5px;
+  //   }
+  // }
+
+
+  .challenge-preview{
+    border-radius: 5px;
+    height: 18%;
+    margin: 1% 20px;
+    display: flex;
+    align-items: center;
+    .challenge-icon {
+      padding: 5px;
+      
+    }
+    .challenge-text {
+      padding: 5px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        margin: 0;
+      }
+      input[type="checkbox"]{
+        width: 40px; /*Desired width*/
+        height: 25px; /*Desired height*/
+        // display: flex;
+        // justify-self: flex-end;
+      }
+    }
+
+  }
+  
   .btn-container{
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     justify-content: center;
     align-items: center;
-    button {
+    width: 100%;
+    .btn {
+      width: 140px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: white;
+      border: 1px red solid;
+      color: red;
       margin: 5px;
     }
+    .btn2 {
+      background-color: red;
+      border: 1px red solid;
+      color: white;
+    }
   }
-
-
 }
+  // .btn-container {
+  //   grid-column-start: 1;
+  //   grid-column-end: 2;
+  //   grid-row-start: 4;
+  //   grid-row-end: 5;
+  //   align-self: center;
+  //   justify-self: center;
+  //   text-align: center;
+  //   font-size: 1.5em;
+  //   text-decoration: none;
+  //   background-color: white;
+  //   width: 70%;
+  //   padding: 5px 0;
+  //   border-radius: 5px;
+  //   color: black;
+  //   &:hover {
+  //     cursor: pointer;
+  //   }
+
+
+// }
 
 
 

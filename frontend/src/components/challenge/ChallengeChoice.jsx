@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { addToStartedChallenge } from '../../stores/actions/challengeActions'
+import { NavLink } from 'react-router-dom'
 import { connect } from 'react-redux'
 //import { NavLink } from 'react-router-dom'
 import './challengeChoice.scss'
@@ -143,7 +144,6 @@ export class ChallengeChoice extends Component {
                   </div>
                   <div className="challenge-text">
                     <h3>{challenge.titre}</h3>
-                    <label htmlFor="checkbox">Choisir ce Challenge</label>
                     <input
                       ClassName="checkbox"
                       type="checkbox"
@@ -162,8 +162,10 @@ export class ChallengeChoice extends Component {
         </ul>
 
         <div className='btn-container'>
-          <button className='btn' onClick={this.shuffle}>Shuffle items</button>
-          <button className='btn' onClick={this.shuffle}>Shuffle items</button>
+          <button className='btn' onClick={this.shuffle}>Jouer à nouveau</button>
+
+          <NavLink to={`./dashboard`}><button className='btn btn2'>Voir mes défis</button>
+          </NavLink>
         </div>
 
       </div >
