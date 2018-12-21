@@ -132,6 +132,12 @@ export class ChallengeChoice extends Component {
             <div key={challenge.id} className={'item'}>{challenge.titre}</div>
             ))}
           </AnimatedItems> */}
+        <div className="challengeChoice-header">
+          <NavLink to={`./dashboard`}><i class="fas fa-chevron-left"></i></NavLink>
+          <p>Choisir vos challenges</p>
+        </div>
+
+
 
         <ul className="chalenge-preview-list">
 
@@ -150,11 +156,8 @@ export class ChallengeChoice extends Component {
                       id="checkbox"
                       onClick={() => this.props.addToStartedChallenge(challenge)}
                     // onChange={(e) => this.addToSelected(e)}
-
                     />
-
                   </div>
-
                 </li>
               )
             }
