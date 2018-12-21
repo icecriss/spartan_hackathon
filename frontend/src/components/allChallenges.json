@@ -52,7 +52,7 @@
     "unité": "Minutes",
     "score": 0,
     "incrementValue": 5,
-    "icone":"fas fa-dharmachakra"
+    "icone":"fab fa-confluence"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "unité": "Minutes",
     "score": 0,
     "incrementValue": 1,
-    "icone":"fas fa-dharmachakra"
+    "icone":"fab fa-confluence"
 
   },
   {
@@ -109,7 +109,7 @@
     "unité": "Heure (max)",
     "score": 0,
     "incrementValue": 0.5,
-    "icone":"fas fa-dharmachakra"
+    "icone":"fab fa-confluence"
 
   }
 ]
