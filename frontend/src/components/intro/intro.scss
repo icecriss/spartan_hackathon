@@ -18,7 +18,7 @@
     grid-row-start: 1;
     grid-row-end: 6;
     height: 100%;
-    background-color: rgba(175, 170, 170, 0.473);
+    background-color: rgba(175, 170, 170, 0.2);
   }
   .introCharacter {
     justify-self: center;
@@ -60,7 +60,8 @@
     align-self: center;
     justify-self: center;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    font-weight: bold;
     text-decoration: none;
     background-color: white;
     width: 70%;

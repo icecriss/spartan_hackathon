@@ -49,7 +49,7 @@ export class Login extends Component {
               onChange={(e) => this.setState({ password: e.target.value })}>
             </input>
           </div>
-        <a onClick={(e) => this.signUser(e)} className="login-button">ENTRER</a>
+        <a onClick={(e) => this.signUser(e)} className="login-button">Entrer</a>
       </div>
       
 
