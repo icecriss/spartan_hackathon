@@ -9,11 +9,15 @@
   grid-template-rows: 50% 15% 20% 10% 5%;  
 
   .welcome-logo {
+    justify-self: center;
+    width: 200px;
+    margin-top:5vh;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
-    width:300px;
-    align-self: center;
-    justify-self: center;
+
+    
   }
 
   h1 {
