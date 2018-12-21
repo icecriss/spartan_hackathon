@@ -125,6 +125,7 @@ export class ChallengeChoice extends Component {
   /// reprendre la fabrication de la route qui lance le defiDSOlo injectée des données en fonctions de son id
   render() {
     const { items } = this.state;
+    console.log('jfdf,djfdid', this.props)
     return (
       <div className="challengeChoice-container">
         {/* <AnimatedItems>
@@ -150,13 +151,13 @@ export class ChallengeChoice extends Component {
                   </div>
                   <div className="challenge-text">
                     <h3>{challenge.titre}</h3>
-                    <input
-                      ClassName="checkbox"
-                      type="checkbox"
-                      id="checkbox"
+                    <div
                       onClick={() => this.props.addToStartedChallenge(challenge)}
-                    // onChange={(e) => this.addToSelected(e)}
-                    />
+                    >
+                      <i
+                        style={{ cursor: 'pointer', paddingRight: '10px', color: 'white' }}
+                        class="fas fa-play-circle fa-2x"></i>
+                    </div>
                   </div>
                 </li>
               )

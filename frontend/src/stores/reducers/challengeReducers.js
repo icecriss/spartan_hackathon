@@ -12,7 +12,11 @@ export default (state = initialState, { type, payload }) => {
     case "ADD_TO_STARTED":
       let currentChallenge = state.startedChallenges;
       currentChallenge.push(payload)
-      return { ...state, startedChallenges: currentChallenge }
+      let allChallenges = state.allChallenges
+      allChallenges = allChallenges.filter((challenge) => {
+        return challenge.id != payload.id
+      })
+      return { ...state, startedChallenges: currentChallenge, allChallenges: [...allChallenges] }
 
     case "ADD_TO_TERMINATED":
       let currentChallenges = state.terminatedChallenges;
