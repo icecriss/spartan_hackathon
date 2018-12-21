@@ -29,7 +29,7 @@ export default (state = initialState, { type, payload }) => {
       // * * * * * * * * //
       // A T T E N T I O N : la ligne du dessous sera à décommenter et celle d'après à supprimer //
       // let challenge = currentChallengess.find((chal) => chal.id == payload.challenge.id)
-      let challenge = currentChallengess.find((chal) => chal.id ? chal.id : 1 == payload.challenge.id)
+      let challenge = currentChallengess.find((chal) => chal.id === payload.challenge.id)
 
       // find the index of current challenge in challenges list
       let index = currentChallengess.indexOf(challenge)

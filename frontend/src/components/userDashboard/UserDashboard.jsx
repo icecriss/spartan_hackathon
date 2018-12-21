@@ -15,49 +15,44 @@ import ChallengeEmpty from './ChallengeEmpty';
 export class UserDashboard extends Component {
   constructor(props) {
     super(props);
-
-    const level = Math.floor((props.challenges.terminatedChallenges.length / 2))
-    const currentLevel = level > 0 ? level : 1
-
     this.state = {
       userName: '',
       image1: mario1,
       image2: mario2,
       image3: mario3,
       currentImage: 2,
-      currentLevel,
-      currentChallengesAccomplished: props.challenges.terminatedChallenges.length,
-      currentChallengesStarted: props.challenges.startedChallenges.length,
     }
   }
 
   resetProfile(){
     const response = window.confirm('Etes vous sur de vouloir remettre à zéro ?')
     response == true ? this.props.resetScore() : console.log("Profile not reset !")
+    this.forceUpdate()
   }
 
 
   render() {
-    console.log(this.props)
+    const level = Math.floor((this.props.challenges.terminatedChallenges.length / 2))
+    const currentLevel = level > 0 ? level : 1
     return (
       <div className="dash-container">
         <div style={{position: 'absolute', cursor: 'pointer'}}
           onClick={() => this.resetProfile()}
         ><i class="fas fa-power-off"></i></div>
-        <img className="dash-character" src={this.state[`image${this.state.currentLevel}`]} />
+        <img className="dash-character" src={this.state[`image${currentLevel}`]} />
         <h2 className="dash-username">{this.props.user.username}</h2>
         <ul className="dash-userScore">
           <li>
-            <p>{this.state.currentChallengesAccomplished}</p>
-            <p>Défis</p>
+            <p>{this.props.challenges.terminatedChallenges.length}</p>
+            <p>Défis terminés</p>
           </li>
           <li className="dash-userScoreCenter">
-            <p>{this.state.currentLevel}</p>
+            <p>{currentLevel}</p>
             <p>Level</p>
           </li>
           <li>
-            <p>{this.state.currentChallengesStarted}</p>
-            <p>Défis</p>
+            <p>{this.props.challenges.startedChallenges.length}</p>
+            <p>Défis en cours</p>
           </li>
         </ul>
         <div className="dash-challengesContainer">
