@@ -1,14 +1,14 @@
 .challenge-container {
   width: 100%;
-  height: 100%;
+  height: 93%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: rgb(190, 182, 182);
   img {
     margin-top: 10px;
-    width: 100px;  
+    width: 80px;  
   }
   .challenge-EmptyText {
     display: flex;

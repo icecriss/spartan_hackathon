@@ -4,11 +4,11 @@
     "titre": "Boire 2L d’eau par jour",
     "description": "L’eau représente entre 50 et 75% de nos corps. Pense à ton corps, hydrate-toi ! C’est une des habitudes les plus simples et les plus saines à adopter.",
     "couleur": "#3498DB",
-    "objectif": 2,
-    "unité": "Litre",
+    "objectif": 200,
+    "unité": "Cl",
     "score": 0,
-    "incrementValue": 0.2,
-    "icon":"fas fa-tint"
+    "incrementValue": 20,
+    "icon": "fas fa-tint"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "unité": "min",
     "score": 0,
     "incrementValue": 10,
-    "icon":"fas fa-sun"
+    "icon": "fas fa-sun"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "unité": "Fruits et/où légumes",
     "score": 0,
     "incrementValue": 1,
-    "icon":"fas fa-child"
+    "icon": "fas fa-child"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "unité": "Minutes",
     "score": 0,
     "incrementValue": 5,
-    "icone":"fas fa-leaf"
+    "icon": "fas fa-paper-plane"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "unité": "Minutes",
     "score": 0,
     "incrementValue": 5,
-    "icone":"fas fa-dharmachakra"
+    "icon": "fab fa-confluence"
   },
   {
     "id": 6,
@@ -63,8 +63,7 @@
     "unité": "Minutes",
     "score": 0,
     "incrementValue": 1,
-    "icone":"fas fa-dharmachakra"
-
+    "icon": "fab fa-confluence"
   },
   {
     "id": 7,
@@ -75,19 +74,18 @@
     "unité": "Nombre",
     "score": 0,
     "incrementValue": 1,
-    "icon":"fas fa-sun"
-
+    "icon": "fas fa-sun"
   },
   {
     "id": 8,
     "titre": "Travailler pour soi",
     "description": "Travailler pour soi, permet de faire évoluer ses projets et ses besoins.",
     "couleur": "#E67E22",
-    "objectif": 1,
-    "unité": "Heure",
+    "objectif": 60,
+    "unité": "Minute",
     "score": 0,
-    "incrementValue": 0.2,
-    "icon":"fas fa-child"
+    "incrementValue": 20,
+    "icon": "fas fa-child"
   },
   {
     "id": 9,
@@ -98,18 +96,17 @@
     "unité": "Minutes",
     "score": 0,
     "incrementValue": 5,
-    "icone":"fas fa-leaf"
+    "icon": "fas fa-paper-plane"
   },
   {
     "id": 10,
     "titre": " Se limiter le temps passé sur les réseaux",
     "description": "Réduire sont temps passer sur les réseaux sociaux, peut libérer du temps pour passer du temps en famille ou tout autre activité.",
     "couleur": "#9B59B6",
-    "objectif": 2,
-    "unité": "Heure (max)",
+    "objectif": 120,
+    "unité": "Minutes (max)",
     "score": 0,
-    "incrementValue": 0.5,
-    "icone":"fas fa-dharmachakra"
-
+    "incrementValue": 30,
+    "icon": "fab fa-confluence"
   }
 ]

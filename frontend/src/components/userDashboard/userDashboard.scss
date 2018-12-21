@@ -3,17 +3,34 @@
   align-items: center;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 10% 10% 25% 5%;
+  grid-template-rows: 5% 35% 10% 10% 35% 5%;
   background-color: white;
+  .dash-headerBtn{
+    display: flex;
+    flex-direction: column;
+    i {
+      padding:  3px;
+    }
+  }
+  .dash-header {
+    padding-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
   .dash-character {
     justify-self: center;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
-    width: 60%;
+    grid-row-end: 3;
+    width: 50%;
     height: auto;
-    padding-bottom: 20px;
     align-self: flex-end;
   }
   .dash-username {
@@ -21,19 +38,20 @@
     justify-self: center;
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   .dash-userScore {
     justify-self: center;
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
     display: flex;
     list-style: none;
     padding: 0;
     width: 100%;
+    justify-content: center;
     li {
       width: 30%;
       text-align: center;
@@ -48,10 +66,13 @@
     justify-self: flex-start;
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
     height: 100%;
     width: 100%;
+    h3 {
+      padding-left: 15px;
+    }
   }
 
 }

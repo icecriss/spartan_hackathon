@@ -1,15 +1,22 @@
 .challenge-container {
   width: 100%;
-  //overflow:scroll;
-  .challenge-option1 {
-    list-style: none;
-    padding: 0;
-    li {
-      margin: 2px 0;
-      p {
-        margin: 0;
-      }
+  div {
+    ul {
+
+      display: flex;
+      padding: 0;
+      justify-content: center;
     }
   }
 
+
+a {
+  // text-decoration: none;
+  list-style: none;
+  color: rgb(0, 0, 0);
+  font-size: 0.9em;
+}
+ul {
+  padding: 0;
+}
 }

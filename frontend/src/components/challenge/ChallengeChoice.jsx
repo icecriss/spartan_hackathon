@@ -146,7 +146,7 @@ export class ChallengeChoice extends Component {
               return (
                 <li className="challenge-preview" style={{ backgroundColor: `${challenge.couleur}` }}>
                   <div className="challenge-icon">
-                    <i className="fas fa-tint"></i>
+                    <i className={challenge.icon}></i>
                   </div>
                   <div className="challenge-text">
                     <h3>{challenge.titre}</h3>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { Line, Circle } from 'rc-progress';
+import { NavLink } from 'react-router-dom';
 import { addToStartedChallenge, incrementScore } from '../../../stores/actions/challengeActions'
 
 
@@ -36,15 +37,26 @@ export class ChallengeDetail extends Component {
   }
 
   render() {
-    console.log(this.state.score * 100 / this.state.objectif)
+    console.log("SCORE", this.state.score)
+    if (this.state.score == this.state.objectif) {
+      setTimeout(() => {
+        alert('BRAVO')
+        this.props.history.push('/dashboard')
+      }, 250)
+    }
+    console.log(Math.ceil(this.state.score * 100 / this.state.objectif))
     return (
       <div className="challengeDetail-container">
+        <div className="dash-headerBtn" style={{ position: 'absolute', top: "10px", left: "10px", cursor: 'pointer' }}
+        >
+          <NavLink to={`/dashboard`}><i class="fas fa-chevron-left"></i></NavLink>
+        </div>
         <div style={{ backgroundImage: `url(${require("../../pictures/1-1.png")})` }} className="challentDetail-stat"></div>
 
         <div className="challengeDetail-img" style={{ backgroundImage: `url(${require(`../../pictures/challengesImages/challengeImage${this.state.id}.jpg`)})` }}></div>
         <div className="challengeDetail-stat">
           <p>{this.state.titre}</p>
-          <Line percent={this.state.score * 100 / this.state.objectif} strokeWidth="2" strokeColor="black" trailColor="white" />
+          <Line percent={Math.ceil(this.state.score * 100 / this.state.objectif)} strokeWidth="2" strokeColor="black" trailColor="white" />
 
         </div>
         <div style={{ backgroundColor: `${this.state.couleur}` }} className="challengeDetail-opacity"></div>
@@ -55,8 +67,8 @@ export class ChallengeDetail extends Component {
         <div className="challengeDetail-buttons">
 
           <i onClick={() => {
-            this.props.incrementScore(this.state, parseFloat(this.state.incrementValue), '-')
-            this.setState({ score: this.state.score -= parseFloat(this.state.incrementValue) })
+            this.props.incrementScore(this.state, parseInt(this.state.incrementValue), '-')
+            this.setState({ score: this.state.score -= parseInt(this.state.incrementValue) })
           }} className="fas fa-minus-circle"></i>
           <div>
             <p className="challengeDetail-incrementValue">{this.state.incrementValue}</p>

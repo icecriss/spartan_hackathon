@@ -9,6 +9,10 @@ export class Challenge extends Component {
     console.log("ici", this.props)
     return (
       <div className="challenge-container">
+        <div>
+
+          <NavLink to='/challenges'><i className="fas fa-plus-circle"></i></NavLink>
+        </div>
         <ul>
           {
 
@@ -19,6 +23,7 @@ export class Challenge extends Component {
                 </div>
               </li>
               </NavLink>
+
             })
           }
         </ul>
