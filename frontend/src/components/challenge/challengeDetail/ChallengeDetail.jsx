@@ -39,6 +39,7 @@ export class ChallengeDetail extends Component {
     console.log(this.state.score * 100 / this.state.objectif)
     return (
       <div className="challengeDetail-container">
+        <div style={{ backgroundImage: `url(${require("../../pictures/1-1.png")})` }} className="challentDetail-stat"></div>
 
         <div className="challengeDetail-img" style={{ backgroundImage: `url(${require(`../../pictures/challengesImages/challengeImage${this.state.id}.jpg`)})` }}></div>
         <div className="challengeDetail-stat">

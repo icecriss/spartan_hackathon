@@ -30,7 +30,7 @@ export class UserDashboard extends Component {
   render() {
     console.log(this.props)
     return (
-      < div className="dash-container" >
+      <div className="dash-container">
         <img className="dash-character" src={this.state[`image${this.state.currentLevel}`]} />
         <h2 className="dash-username">{this.props.user.username}</h2>
         <ul className="dash-userScore">
@@ -50,10 +50,10 @@ export class UserDashboard extends Component {
         <div className="dash-challengesContainer">
           <h3>Challenges en cours</h3>
 
-          {this.state.currentChallengesStarted === 0 && <ChallengeEmpty />}
-          {this.state.currentChallengesStarted !== 0 && <ChallengesStarted />}
+          {!this.props.challenges.startedChallenges.length > 0 && <ChallengeEmpty />}
+          {this.props.challenges.startedChallenges.length > 0 && <ChallengesStarted />}
         </div>
-      </div >
+      </div>
     )
   }
 }

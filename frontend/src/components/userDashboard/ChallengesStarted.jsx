@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import './challengesStarted.scss';
+import { NavLink } from 'react-router-dom'
 
 
 export class Challenge extends Component {
@@ -8,13 +9,20 @@ export class Challenge extends Component {
     console.log("ici", this.props)
     return (
       <div className="challenge-container">
-       {
+      <ul>
+       { 
+         
         this.props.challenges.startedChallenges.map((challenge) => {
-          return <li> {challenge.titre}</li>
+          return <NavLink to={`./challenge/${challenge.id}`}><li>
+          <div>
+            <h3>{challenge.titre}</h3>             
+          </div>
+        </li>
+        </NavLink>
          })
        }
-       
-      </div>
+       </ul>
+      </div>  
     )
   }
 }
